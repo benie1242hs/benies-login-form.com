@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">    
+<html>
+<title>
+Benie's login Page
+</title>
+
+<head>
+<link href="img/favicon.png" rel="favicon">
+<link href="img/apple-touch-icon.png" rel="icon">
+<link href="css/main.css" rel="stylesheet">
+<script src="script/main.js"></script>
+</head>
+<header>
+<!-- loader section -->
+<div id="loader" class="loader"></div>
+<Style>
+#loader {
+background: rgb(10, 10, 10) url("./img/apple-touch-icon.png") no-repeat center center;
+height: 100vh;
+width: 100%;
+position:fixed;
+text-align: center;
+Z-index: 100;
+display:flex;
+background-size: 200px;
+
+}
+
+.loader {
+position:fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: 30px;
+width: 40px;
+display:inline;
+justify-content: center;
+
+}
+
+.disppear {
+animation: vanish 3.5s forwards;
+opacity:  0.5s;
+
+}
+
+@keyframes vanish {
+100% {
+visibility: hidden;
+opacity: 0;
+}
+}
+</style>
+<Script>
+var loader = document.querySelector(".loader")
+window.addEventListener("load", vanish);
+
+function vanish() {
+loader.classList.add("disppear");
+
+}
+</Script>
+</header>
+<body>
+<!-- content -->
+<div class="main" id="main">
+<div class="container-panel">
+<center>
+<h1>
+Welcome User
+</h1>
+</center>
+</div>
+
+<section>
+<div class="username">
+<h2>Username</h2>
+<input  placeholder="username"required></input>
+</div>
+
+<div class="password">
+<h2>Password</h2>
+<input placeholder="password" required></input>
+</div>
+
+<a href="*">
+<div class="button">Enter</div>
+</a><div>
+<a href="./register.html">
+<div class="register">Register here!</div></a>
+
+</div>
+</div>
+
+</section>
+</main>
+<footer>
+</footer>
+</body>
+</html>
